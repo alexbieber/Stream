@@ -53,7 +53,7 @@ function testMedia() {
     .then((stream) => {
       theStream = stream;
       document.getElementById("webcam").srcObject = theStream;
-      window.location = "https://omeegle.herokuapp.com/videochat.html";
+      window.location = "https://streamwithstrangers.herokuapp.com/videochat.html";
     })
     .catch((e) => {
       console.log(e);
@@ -64,5 +64,5 @@ function testMedia() {
     });
 }
 function textChat() {
-  window.location = "https://aidens-omegle-chat.herokuapp.com/";
+  window.location = "https://streamwithstrangers.herokuapp.com/";
 }
