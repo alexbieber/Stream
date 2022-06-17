@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="title">
+      <h1>Aiden's Omegle Clone</h1>
+    </div>
+    <div id="content">
+      <p>
+        Welcome to my Omegle Clone! This website was made by using a combination
+        of web sockets and webRTC to establish a connection between two people,
+        the source code can be found
+        <a href="https://github.com/aidenwalker42/omegle-clone-v1">here.</a>
+      </p>
+      <p>
+        <b>
+          Video chat requires you to have a media device connected, also mobile
+          is not supported currently.</b
+        >
+        If you are having trouble connecting to your webcam make sure your
+        browser is not blocking access to media devices. There are known issues
+        with Microsoft Edge and Firefox with media devices as well (Chrome works
+        best) also make sure your connection is secure (https). If you do not
+        have a webcam feel free to join the text only chat!
+      </p>
+    </div>
+    <h3>Check your webcam</h3>
+    <h5>
+      Media Device Status:
+      <span id="status" class="notactive">Not Connected</span>
+    </h5>
+    <div id="video">
+      <video id="webcam" autoplay playsinline></video>
+    </div>
+    <div id="activate-media">
+      <button onclick="activateWebcam()">Activate Media</button>
+    </div>
+    <h2>Start Chatting!</h2>
+    <div id="chats">
+      <button id="Text Chat" onclick="textChat()">Text Chat</button>
+      <button id="Text Chat" onclick="testMedia()">Video Chat</button>
+    </div>
+    <p id="media-error" class="error"></p>
+    <script src="home.js"></script>
+  </body>
+</html>
